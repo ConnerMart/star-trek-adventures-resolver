@@ -14,11 +14,60 @@
       name="numberOfDice"
       style="margin-top: 50px"
     />
-    <br />
     <button id="roll-button" style="margin-top: 20px; margin-bottom: 20px">
       Roll
     </button>
-    <div></div>
+    <p>Or select from the list of weapons:</p>
+    <button id="rollUnarmedStrike" onclick="rollWeapon(1, `Unarmed Strike`)">
+      Unarmed Strike</button
+    ><br />
+    <button id="rollKnife" onclick="rollWeapon(1, `Knife`)">Knife</button><br />
+    <button id="rollBlade" onclick="rollWeapon(2, `Blade`)">
+      Blade (Sword, Mek'leth, etc.)</button
+    ><br />
+    <button id="rollHeavyBlade" onclick="rollWeapon(3, `Heavy Blade`)">
+      Heavy Blade (Bat'leth, Kar'takin, Lirpa)</button
+    ><br />
+    <button id="rollBludgeon" onclick="rollWeapon(2, `Bludegon`)">
+      Bludgeon</button
+    ><br />
+    <button id="rollPhaser1" onclick="rollWeapon(2, `Phaser Type-1`)">
+      Phaser Type-1</button
+    ><br />
+    <button id="rollPhaser2" onclick="rollWeapon(3, `Phaser Type-2`)">
+      Phaser Type-2</button
+    ><br />
+    <button
+      id="rollPhaser3"
+      onclick="rollWeapon(4, `Phaser Type-3 (Phaser Rifle)`)"
+    >
+      Phaser Type-3 (Phaser Rifle)</button
+    ><br />
+    <button id="rollPulseGrenade" onclick="rollWeapon(4, `Pulse Grenade`)">
+      Pulse Grenade</button
+    ><br />
+    <button
+      id="rollAndorianPlasmaRifle"
+      onclick="rollWeapon(4, `Andorian Plasma Rifle`)"
+    >
+      Andorian Plasma Rifle</button
+    ><br />
+    <button id="rollPhasePistol" onclick="rollWeapon(3, `Phase Pistol`)">
+      Phase Pistol</button
+    ><br />
+    <button id="rollParticleRifle" onclick="rollWeapon(4, `Particle Rifle`)">
+      Particle Rifle</button
+    ><br />
+    <button
+      id="rollDisruptorPistol"
+      onclick="rollWeapon(3, `Disruptor Pistol`)"
+    >
+      Disruptor Pistol</button
+    ><br />
+    <button id="rollDisruptorRifle" onclick="rollWeapon(4, `Disruptor Rifle`)">
+      Disruptor Rifle</button
+    ><br />
+
     <script src="./script.js"></script>
   </body>
 </html>
