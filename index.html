@@ -13,17 +13,38 @@
     />
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body class="bg-dark">
-    <input
+  <body class="bg-dark text-light">
+    <!-- <input
       type="text"
       class="form-control"
       placeholder="Enter # of d6"
       id="numberOfDice"
       name="numberOfDice"
       style="margin-top: 50px"
-    />
+    /> -->
+    <select
+      type="text"
+      class="form-select"
+      id="numberOfDice"
+      name="numberOfDice"
+      style="margin-top: 50px"
+    >
+      <option selected># of d6</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+    </select>
     <button id="roll-button" class="btn btn-primary">Roll</button>
-    <p>Or select from the list of weapons:</p>
+    <br />
     <button
       id="rollUnarmedStrike"
       class="btn btn-primary"
@@ -122,6 +143,23 @@
     >
       Disruptor Rifle</button
     ><br />
+    <div id="rollResults">
+      <h3 id="rollIndicator" style="display: none">
+        Rolling <span id="dieCount"></span>d6...
+      </h3>
+      <br />
+      <br />
+      <h3>
+        <span id="resultsList" style="display: none"></span>
+      </h3>
+      <h3 id="damageIndicator" style="display: none">
+        Damage: <span id="damageOutput"></span>
+      </h3>
+      <br />
+      <h3 id="effectIndicator" style="display: none">
+        Effects: <span id="effectOutput"></span>
+      </h3>
+    </div>
 
     <script src="./script.js"></script>
   </body>

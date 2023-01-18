@@ -19,6 +19,23 @@ rollButton.addEventListener("click", function rollNumberOfDice() {
     Damage Rolled: ${damageResult}
     Effects Rolled: ${effectCount}
     `);
+  var rollIndicator = document.getElementById("rollIndicator");
+  rollIndicator.style = "display: inline";
+
+  var resultsList = document.getElementById("resultsList");
+  resultsList.style = "display: inline";
+  resultsList.textContent = `${allResults.join(", ")}`;
+
+  var damageIndicator = document.getElementById("damageIndicator");
+  damageIndicator.style = "display: inline";
+  var effectIndicator = document.getElementById("effectIndicator");
+  effectIndicator.style = "display: inline";
+  var dieCount = document.getElementById("dieCount");
+  dieCount.textContent = `${numberOfDice}`;
+  var damageOutput = document.getElementById("damageOutput");
+  damageOutput.textContent = `${damageResult}`;
+  var effectOutput = document.getElementById("effectOutput");
+  effectOutput.textContent = `${effectCount}`;
   damageResult = 0;
   effectCount = 0;
 });
