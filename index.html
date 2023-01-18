@@ -5,66 +5,121 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Star Trek Adventures</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
   </head>
-  <body>
+  <body class="bg-dark">
     <input
       type="text"
-      placeholder="Enter Number of Dice to Roll"
+      class="form-control"
+      placeholder="Enter # of d6"
       id="numberOfDice"
       name="numberOfDice"
       style="margin-top: 50px"
     />
-    <button id="roll-button" style="margin-top: 20px; margin-bottom: 20px">
-      Roll
-    </button>
+    <button id="roll-button" class="btn btn-primary">Roll</button>
     <p>Or select from the list of weapons:</p>
-    <button id="rollUnarmedStrike" onclick="rollWeapon(1, `Unarmed Strike`)">
+    <button
+      id="rollUnarmedStrike"
+      class="btn btn-primary"
+      onclick="rollWeapon(1, `Unarmed Strike`)"
+    >
       Unarmed Strike</button
     ><br />
-    <button id="rollKnife" onclick="rollWeapon(1, `Knife`)">Knife</button><br />
-    <button id="rollBlade" onclick="rollWeapon(2, `Blade`)">
+    <button
+      id="rollKnife"
+      class="btn btn-primary"
+      onclick="rollWeapon(1, `Knife`)"
+    >
+      Knife</button
+    ><br />
+    <button
+      id="rollBlade"
+      class="btn btn-primary"
+      onclick="rollWeapon(2, `Blade`)"
+    >
       Blade (Sword, Mek'leth, etc.)</button
     ><br />
-    <button id="rollHeavyBlade" onclick="rollWeapon(3, `Heavy Blade`)">
+    <button
+      id="rollHeavyBlade"
+      class="btn btn-primary"
+      onclick="rollWeapon(3, `Heavy Blade`)"
+    >
       Heavy Blade (Bat'leth, Kar'takin, Lirpa)</button
     ><br />
-    <button id="rollBludgeon" onclick="rollWeapon(2, `Bludegon`)">
+    <button
+      id="rollBludgeon"
+      class="btn btn-primary"
+      onclick="rollWeapon(2, `Bludegon`)"
+    >
       Bludgeon</button
     ><br />
-    <button id="rollPhaser1" onclick="rollWeapon(2, `Phaser Type-1`)">
+    <button
+      id="rollPhaser1"
+      class="btn btn-primary"
+      onclick="rollWeapon(2, `Phaser Type-1`)"
+    >
       Phaser Type-1</button
     ><br />
-    <button id="rollPhaser2" onclick="rollWeapon(3, `Phaser Type-2`)">
+    <button
+      id="rollPhaser2"
+      class="btn btn-primary"
+      onclick="rollWeapon(3, `Phaser Type-2`)"
+    >
       Phaser Type-2</button
     ><br />
     <button
       id="rollPhaser3"
+      class="btn btn-primary"
       onclick="rollWeapon(4, `Phaser Type-3 (Phaser Rifle)`)"
     >
       Phaser Type-3 (Phaser Rifle)</button
     ><br />
-    <button id="rollPulseGrenade" onclick="rollWeapon(4, `Pulse Grenade`)">
+    <button
+      id="rollPulseGrenade"
+      class="btn btn-primary"
+      onclick="rollWeapon(4, `Pulse Grenade`)"
+    >
       Pulse Grenade</button
     ><br />
     <button
       id="rollAndorianPlasmaRifle"
+      class="btn btn-primary"
       onclick="rollWeapon(4, `Andorian Plasma Rifle`)"
     >
       Andorian Plasma Rifle</button
     ><br />
-    <button id="rollPhasePistol" onclick="rollWeapon(3, `Phase Pistol`)">
+    <button
+      id="rollPhasePistol"
+      class="btn btn-primary"
+      onclick="rollWeapon(3, `Phase Pistol`)"
+    >
       Phase Pistol</button
     ><br />
-    <button id="rollParticleRifle" onclick="rollWeapon(4, `Particle Rifle`)">
+    <button
+      id="rollParticleRifle"
+      class="btn btn-primary"
+      onclick="rollWeapon(4, `Particle Rifle`)"
+    >
       Particle Rifle</button
     ><br />
     <button
       id="rollDisruptorPistol"
+      class="btn btn-primary"
       onclick="rollWeapon(3, `Disruptor Pistol`)"
     >
       Disruptor Pistol</button
     ><br />
-    <button id="rollDisruptorRifle" onclick="rollWeapon(4, `Disruptor Rifle`)">
+    <button
+      id="rollDisruptorRifle"
+      class="btn btn-primary"
+      onclick="rollWeapon(4, `Disruptor Rifle`)"
+    >
       Disruptor Rifle</button
     ><br />
 
